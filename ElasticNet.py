@@ -26,5 +26,5 @@ enet = ElasticNet()
 
 enet.fit(x_train, y_train)
 
-print("Ridge Train RMSE:", np.round(np.sqrt(metrics.mean_squared_error(y_train, enet.predict(y_train))),5))
-print("Ridge Test RMSE:", np.round(np.sqrt(metrics.mean_squared_error(y_test, enet.predict(y_test))),5))
+print("Ridge Train RMSE:", np.round(np.sqrt(metrics.mean_squared_error(y_train, enet.predict(x_train))),5))
+print("Ridge Test RMSE:", np.round(np.sqrt(metrics.mean_squared_error(y_test, enet.predict(x_test))),5))
