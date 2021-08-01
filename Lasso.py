@@ -26,5 +26,5 @@ lasso = Lasso()
 
 lasso.fit(x_train, y_train)
 
-print("Lasso Train RMSE:", np.round(np.sqrt(metrics.mean_squared_error(y_train, lasso.predict(y_train))),5))
-print("Lasso Test RMSE:", np.round(np.sqrt(metrics.mean_squared_error(y_test, lasso.predict(y_test))),5))
+print("Lasso Train RMSE:", np.round(np.sqrt(metrics.mean_squared_error(y_train, lasso.predict(x_train))),5))
+print("Lasso Test RMSE:", np.round(np.sqrt(metrics.mean_squared_error(y_test, lasso.predict(x_test))),5))
